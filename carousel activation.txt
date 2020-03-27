@@ -1,0 +1,1 @@
+{% include carousel.html height="25" unit="%" duration="7" %}
