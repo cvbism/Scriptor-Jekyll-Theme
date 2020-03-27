@@ -28,16 +28,14 @@ google_analytics: ""
 
 # Site navigation - each item must have a title and a url.
 navigation:
-  - text: Home
+  - text: HOME
     url: /
-  - text: About
+  - text: ABOUT
     url: /about/
-  - text: Stile
-    url: /style-guide/
-  - text: Ricerca
+  - text: TEAMS
+    url: /
+  - text: SEARCH
     url: /tags/
-  - text: ITA
-    url: /ITA/
 
 # The shortname for your Disqus site to enable comments.
 disqus: justgoodthemes
