@@ -31,6 +31,7 @@ layout: default
 
   <article class="post">
     <header class="post-header">
+      <div align="justify">
       <h1 class="post-title">{{page.title}}</h1>
     </header><!-- .post-header -->
     <div class="post-content">
@@ -40,7 +41,9 @@ layout: default
         {% for tag in sortedTags %}
         <a href="#{{ tag | cgi_escape }}">{{ tag }}</a>{% unless forloop.last %} {% endunless %}
         {% endfor %}
-      </div><!-- .archive-tag-list -->
+        </div>
+      </div>
+      <!-- .archive-tag-list -->
       {% for tag in sortedTags %}
         <h2 id="{{ tag | cgi_escape }}">{{ tag }}</h2>
         <ul class="archive-post-list">
