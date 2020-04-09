@@ -1,5 +1,5 @@
 ---
-layout: teams
+layout: page
 title: Clubs
 ---
 {% for team in site.teams %}
