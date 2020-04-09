@@ -2,7 +2,7 @@
 layout: page
 title: Clubs
 ---
-<div class="clubs">
+<div class="clubs" align="justify">
 {% for team in site.teams %}
   <div class="team">
     <h3 align="center">
