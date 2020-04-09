@@ -2,6 +2,7 @@
 layout: page
 title: Clubs
 ---
+<h2 align="center">
 {% for team in site.teams %}
 
   <div class="team" style="padding: 40px; display: inline-block;">
@@ -15,4 +16,4 @@ title: Clubs
   </div>
  
 {% endfor %}
-
+</h2>
