@@ -33,7 +33,7 @@ navigation:
   - text: ABOUT
     url: /about/
   - text: CLUBS
-    url: /
+    url: /clubs/
   - text: SEARCH
     url: /tags/
 
