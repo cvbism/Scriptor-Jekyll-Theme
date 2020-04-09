@@ -1,4 +1,5 @@
 ---
+layout: page
 title: team1
 feature_image: images/desk.jpg
 ---
