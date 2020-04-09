@@ -1,6 +1,7 @@
 ---
 layout: teams
 title: team1
-feature_image: images/favicon.png
+thumb_image: images/favicon.png
+feature_image: images/iphone-6.jpg
 ---
 testest lorem ipsum team1 collection
