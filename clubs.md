@@ -2,10 +2,9 @@
 layout: page
 title: Clubs
 ---
-{% assign loopindex = 0 %}
 {% for team in site.teams %}
 
-  <div class="team1">{{ loopindex }} {{ rowfinder }}
+  <div class="team1">
     <h3 align="center">
       <a href="{{ team.url }}"> 
         <img src="{{team.thumb_image}}"> 
