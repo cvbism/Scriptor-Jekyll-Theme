@@ -3,7 +3,8 @@ layout: page
 title: Clubs
 ---
 <div class="clubs" align="justify">
-{% for team in site.teams reversed limit: 4 offset: 4 %}
+{% for team in site.teams %}
+{% assign mod = forloop.index | modulo: 4 %}
   <div class="team">
     <h3 align="center">
       <a href="{{ team.url }}"> 
