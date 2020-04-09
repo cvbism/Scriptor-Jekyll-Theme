@@ -71,4 +71,3 @@ sass:
 # collections
 collections:
   teams:
-    output: true
