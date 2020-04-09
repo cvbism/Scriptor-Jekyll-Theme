@@ -9,7 +9,7 @@ title: Clubs
       <a href="{{ team.url }}"> 
         <img src="{{team.thumb_image}}"> 
         <br>{{ team.title }}
-        <small>{{team.description}}</small>
+        <p><sub>{{team.description}}</sub></p>
       </a>
     </h3>
   </div>
