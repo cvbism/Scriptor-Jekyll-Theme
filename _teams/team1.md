@@ -1,6 +1,7 @@
 ---
 layout: teams
 title: team1
+description: test description team1
 thumb_image: images/favicon.png
 feature_image: images/iphone-6.jpg
 ---
