@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: teams
 title: Clubs
 ---
-{% for teams in site.teams %}
-  <div class="teams">
-    <h2><a href="{{ teams.url }}">{{ teams.title }}</a></h2>
+{% for team in site.teams %}
+  <div class="team">
+    <h2><a href="{{ team.url }}">{{ team.title }}</a></h2>
   </div>
 {% endfor %}
