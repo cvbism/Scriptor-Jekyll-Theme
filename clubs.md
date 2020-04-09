@@ -2,29 +2,52 @@
 layout: page
 title: Clubs
 ---
-<div class="clubs" align="justify">
+{% assign loopindex = 0 %}
 {% for team in site.teams %}
-  
-  <div class="team1">
-    <h3 align="center">
-      <a href="{{ team.url }}"> 
-        <img src="{{team.thumb_image}}"> 
-        <br>{{ team.title }}
-        <p><sub>{{team.description}}</sub></p>
-      </a>
-    </h3>
-  </div>
-  
-  <div class="team2">
-    <h3 align="center">
-      <a href="{{ team.url }}"> 
-        <img src="{{team.thumb_image}}"> 
-        <br>{{ team.title }}
-        <p><sub>{{team.description}}</sub></p>
-      </a>
-    </h3>
-  </div>
+{% assign loopindex = loopindex | plus: 1 %}
+{% assign rowfinder = loopindex | modulo: 4 %}
  
+ {% if rowfinder == 1 %}
+      
+  <div class="row">
+  <div class="team1">{{ loopindex }} {{ rowfinder }}
+    <h3 align="center">
+      <a href="{{ team.url }}"> 
+        <img src="{{team.thumb_image}}"> 
+        <br>{{ team.title }}
+        <p><sub>{{team.description}}</sub></p>
+      </a>
+    </h3>
+  </div>
+  
+  {% elsif rowfinder == 0 %}
+  
+  <div class="team1">{{ loopindex }} {{ rowfinder }}
+    <h3 align="center">
+      <a href="{{ team.url }}"> 
+        <img src="{{team.thumb_image}}"> 
+        <br>{{ team.title }}
+        <p><sub>{{team.description}}</sub></p>
+      </a>
+    </h3>
+  </div>
+  
+   {% else %}
+   <div class="team1">{{ loopindex }} {{ rowfinder }}
+    <h3 align="center">
+      <a href="{{ team.url }}"> 
+        <img src="{{team.thumb_image}}"> 
+        <br>{{ team.title }}
+        <p><sub>{{team.description}}</sub></p>
+      </a>
+    </h3>
+  </div>
+  
+   {% endif %}
+  {% endif %}
+  
   
 {% endfor %}
-</div>
+{% if rowfinder != 0 %}
+      </div>
+{% endif %}
