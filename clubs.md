@@ -2,9 +2,17 @@
 layout: page
 title: Clubs
 ---
+<div class="clubs">
 {% for team in site.teams %}
   <div class="team">
-  <h3 align="center"><a href="{{ team.url }}"> <img src="{{team.thumb_image}}"> <br>{{ team.title }}</a>
-  </h3>
-{% endfor %}
+    <h3 align="center">
+      <a href="{{ team.url }}"> 
+        <img src="{{team.thumb_image}}"> 
+        <br>{{ team.title }}
+        <p>{{team.description}}</p>
+      </a>
+    </h3>
   </div>
+  
+{% endfor %}
+</div>
