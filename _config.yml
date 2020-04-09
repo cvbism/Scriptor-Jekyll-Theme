@@ -45,7 +45,7 @@ accent_color: '#000000'
 
 # Site footer
 footer:
-  content: "   &copy; CVBISM all rights reserved. Break the rules."
+  content: "&copy; CARCVBISM all rights reserved. Break the rules."
   has_social: true
 
 # Plugins
