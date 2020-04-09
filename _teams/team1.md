@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: teams
 title: team1
 feature_image: images/favicon.png
 ---
